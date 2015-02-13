@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <fullnamespace>ProductOfflineWithStock\ProductOfflineWithStock</fullnamespace>
+    <descriptive locale="en_US">
+        <title>Offline products with positive stock</title>
+    </descriptive>
+    <descriptive locale="fr_FR">
+        <title>Produits Hors Ligne avec du stock</title>
+    </descriptive>
+    <version>1.0.0</version>
+    <author>
+        <name>Julien Citerne</name>
+        <email>jciterne@openstudio.fr</email>
+    </author>
+    <type>classic</type>
+    <thelia>2.0.0</thelia>
+    <stability>other</stability>
+</module>
