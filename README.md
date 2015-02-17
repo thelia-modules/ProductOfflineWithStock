@@ -16,7 +16,7 @@ This module allows you to list products offline with stock.
 Add it in your main thelia composer.json file
 
 ```
-composer require thelia/productofflinewithstock-module:~1.0
+composer require thelia/product-offline-with-stock-module:~1.0
 ```
 
 ## Usage

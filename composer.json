@@ -1,5 +1,5 @@
 {
-    "name": "thelia/productofflinewithstock-module",
+    "name": "thelia/product-offline-with-stock-module",
     "type": "thelia-module",
     "license": "LGPL V3",
     "description": "List offline products with positive stock",
