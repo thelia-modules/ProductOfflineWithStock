@@ -13,6 +13,6 @@
         <email>jciterne@openstudio.fr</email>
     </author>
     <type>classic</type>
-    <thelia>2.0.0</thelia>
-    <stability>other</stability>
+    <thelia>2.2.0</thelia>
+    <stability>prod</stability>
 </module>
