@@ -1,7 +1,7 @@
 {
     "name": "thelia/product-offline-with-stock-module",
     "type": "thelia-module",
-    "license": "LGPL V3",
+    "license": "LGPL-3.0+",
     "description": "List offline products with positive stock",
     "authors": [
         {
