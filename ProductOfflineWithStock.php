@@ -13,6 +13,7 @@
 namespace ProductOfflineWithStock;
 
 use Thelia\Module\BaseModule;
+use Symfony\Component\DependencyInjection\Loader\Configurator\ServicesConfigurator;
 
 /**
  * Class ProductOfflineWithStock
@@ -24,4 +25,12 @@ class ProductOfflineWithStock extends BaseModule
 {
     /** @var string */
     const MODULE_DOMAIN = 'productofflinewithstock';
+
+    public static function configureServices(ServicesConfigurator $servicesConfigurator): void
+    {
+        $servicesConfigurator->load(self::getModuleCode().'\\', __DIR__)
+            ->exclude([THELIA_MODULE_DIR . ucfirst(self::getModuleCode()). "/I18n/*"])
+            ->autowire(true)
+            ->autoconfigure(true);
+    }
 }
