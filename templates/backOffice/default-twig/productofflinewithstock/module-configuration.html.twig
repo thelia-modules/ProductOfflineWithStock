@@ -1,5 +1,5 @@
 {% set domain = 'productofflinewithstock' %}
-{% set list_url = '/admin/module/ProductOfflineWithStock' %}
+{% set list_url = path('admin.module.configure', {module_code: 'ProductOfflineWithStock'}) %}
 {% set can_update = is_granted('UPDATE', 'admin.product') %}
 
 {% macro sort_header(label, order, current_order, list_url) %}
