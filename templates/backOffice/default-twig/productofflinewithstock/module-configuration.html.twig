@@ -46,6 +46,7 @@
                             <form method="post" action="{{ path('productofflinewithstock.toggle-visibility') }}" class="d-inline">
                                 <input type="hidden" name="_token" value="{{ assignToken() }}">
                                 <input type="hidden" name="product_id" value="{{ item.id }}">
+                                <input type="hidden" name="visible" value="{{ item.visible ? 0 : 1 }}">
                                 <input type="hidden" name="page" value="{{ current_page }}">
                                 <input type="hidden" name="product_order" value="{{ order }}">
                                 <button type="submit" class="btn btn-sm {{ item.visible ? 'btn-success' : 'btn-outline-danger' }}" title="{{ (item.visible ? 'Put offline' : 'Put online')|trans({}, domain) }}">

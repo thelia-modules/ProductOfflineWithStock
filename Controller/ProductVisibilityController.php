@@ -28,7 +28,10 @@ class ProductVisibilityController extends BaseAdminController
 
         $this->getTokenProvider()->checkToken((string) $request->request->get('_token', ''));
 
-        if (null !== $product = ProductQuery::create()->findPk((int) $request->request->get('product_id', 0))) {
+        $targetVisible = (bool) $request->request->get('visible', 0);
+        $product = ProductQuery::create()->findPk((int) $request->request->get('product_id', 0));
+
+        if (null !== $product && (bool) $product->getVisible() !== $targetVisible) {
             $dispatcher->dispatch(new ProductToggleVisibilityEvent($product), TheliaEvents::PRODUCT_TOGGLE_VISIBILITY);
         }
 
